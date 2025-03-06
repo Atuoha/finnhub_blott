@@ -61,9 +61,10 @@ class NotificationHandler {
 
   void checkNotificationPermission(BuildContext context) async {
     PermissionStatus status = await Permission.notification.status;
-
-    if (status.isDenied || status.isPermanentlyDenied || !status.isGranted) {
-      if (context.mounted) {
+    if (context.mounted) {
+      if (status.isDenied || status.isPermanentlyDenied || !status.isGranted) {
+        showPrePermissionDialog(context);
+      } else {
         showPrePermissionDialog(context);
       }
     }
