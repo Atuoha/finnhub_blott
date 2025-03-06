@@ -65,12 +65,14 @@ class NotificationHandler {
       if (status.isDenied || status.isPermanentlyDenied || !status.isGranted) {
         showPrePermissionDialog(context);
       } else {
+        //PS:  DID THIS JUST TO SHOWCASE THE NOTIFICATION PERMISSION, RECENT ANDROID VERSION DON'T REQUIRE PERMISSIONS FOR NOTIFICATIONS
         showPrePermissionDialog(context);
       }
     }
   }
 
   void showPrePermissionDialog(BuildContext context) {
+    // This is meant to be isIOS but I changed it to isAndroid so I can demonstrate the exact notification dialog on the design
     if (Platform.isAndroid) {
       showCupertinoDialog(
         context: context,
