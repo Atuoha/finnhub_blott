@@ -1,4 +1,4 @@
-# Flutter Task TO IMPLEMENT FINNHUB NEWS
+# IMPLEMENTING FINNHUB NEWS
 
 ## A FINNHUB NEWS Flutter Implementation.
 
@@ -27,9 +27,7 @@
 
 #### Extra:
 - Full Setup and Launch Icons
-- Network Notification
-- Test
-- New View Using WebView
+- Network Notification, Test, New View Using WebView and More
 
 
 #### APK, SCREENSHOTS AND VIDEO:
